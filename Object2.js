@@ -25,3 +25,15 @@ function findBelongings () {
 findBelongings();
 
 console.log(adventurer.companion.name);
+
+const movie = { title: "Eraserhead", director: "David Lynch", year: 1978 }
+
+for (let key in movie) {
+	console.log(movie[key]);
+}
+
+const keys = Object.keys(movie);
+
+for (let i = 0; i < Object.keys(movie).length; i++) {
+	console.log(movie[keys[i]]);
+}
