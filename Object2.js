@@ -1,7 +1,15 @@
 const adventurer = {
 	name: "Tien",
 	hitpoints: 10,
-	belongings: ["Hammer", "Magic knife", "Wallet"]
+	belongings: ["Hammer", "Magic knife", "Wallet"],
+	companion: {
+		name: "Susan",
+		type: "Bat"
+	},
+	companion2: {
+		name: "Duc",
+		type: "Incest"
+	}
 }
 
 console.log(adventurer.belongings[2]);
@@ -15,3 +23,5 @@ function findBelongings () {
 }
 
 findBelongings();
+
+console.log(adventurer.companion.name);
